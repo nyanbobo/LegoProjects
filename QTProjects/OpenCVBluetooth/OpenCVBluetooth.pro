@@ -13,10 +13,13 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    bluetoothwrapper.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    bluetoothwrapper.h
 
 FORMS    += mainwindow.ui
 
 LIBS    += `pkg-config --libs opencv`
+LIBS    += -lbluetooth
